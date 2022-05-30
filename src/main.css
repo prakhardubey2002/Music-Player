@@ -113,13 +113,20 @@ header h3 {
 }
 
 .actions {
-  background: #3a3a3a;
+  background: #4AA9DE;
   color:white;
   display: flex;
   flex-direction: row;
   align-items: center;
+  padding: 1rem;
+  width: 80vw;
+  height: 40vh;
 }
-
+.actions img{
+  border: 1px solid black;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  height: 80%;
+}
 .actions button {
   background: none;
   border: none;
@@ -145,9 +152,8 @@ header h3 {
 }
 .playlist {
   background: #e3e3e3;
-  flex: 1 1;
   display: flex;
-  flex-direction: column;
+ padding: 0.2rem;
 }
 
 .selected {
@@ -193,6 +199,12 @@ header h3 {
   display: flex;
   flex-direction: row;
   align-items: center;
+  background-color: rgba(0, 0, 0, 0.125);
+  border: 1px solid bisque;
+  border-radius: 4px;
+  padding: 0.2rem;
+  width: 80vw;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .loi li:hover{
   background-color: #dfdfdf;
@@ -200,12 +212,19 @@ header h3 {
 .tmbn_song {
   height: 65px;
   width: 65px;
-  background:url('https://freemusicarchive.org/image?file=images%2Falbums%2FSkidmore_College_Orchestra_-_Mussorgskys_Pictures_at_an_Exhibition_-_2009113013701972.jpg&width=290&height=290&type=image');
+  /* background:url('https://freemusicarchive.org/image?file=images%2Falbums%2FSkidmore_College_Orchestra_-_Mussorgskys_Pictures_at_an_Exhibition_-_2009113013701972.jpg&width=290&height=290&type=image'); */
   background-size: contain;
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  
+}
+.tmbn_song img{
+  position: absolute;
+  width: 80%;
+  border: 1px solid black;
 }
 .songlist {
   overflow-y: auto;

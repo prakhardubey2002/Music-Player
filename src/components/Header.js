@@ -4,7 +4,7 @@ const Header = () => {
   return (
     <header>
         <h3>
-            Reactwave -{}
+            Player -{}
         </h3>
     </header>
   )

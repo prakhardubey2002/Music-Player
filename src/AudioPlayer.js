@@ -2,7 +2,8 @@ import React from 'react'
 import './main.css'
 import './input.css'
 import Header from './components/Header'
-import Action from './playlist/Action'
+import Action from './components/playlist/Action'
+import Playist from './components/playlist/Playist'
 
 const AudioPlayer = () => {
   return (
@@ -10,7 +11,7 @@ const AudioPlayer = () => {
        <div className="inside_content">
            <Header/>
            <Action/>
-           {/* Playlist */}
+           <Playist/>
        </div>
        {/* <Controls/> */}
    </div>
