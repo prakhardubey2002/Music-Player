@@ -11,6 +11,7 @@ const Playist = () => {
               <li className="songContainer">
                 <div className="tmbn_song">
                   <img src={song.pic} alt="" />
+                  <i className='fas fa-play' ></i>
                 </div>
                 <div className="songmeta_playlist">
                   <span className="songname">{song.title}</span>
@@ -21,7 +22,7 @@ const Playist = () => {
                     <i className="far fa-heart fa-lg"></i>
                   </button>
                   <button className="options_song playlist_btn">
-                    <i class="fas fa-ellipsis-v fa-lg"></i>
+                    <i className="fas fa-ellipsis-v fa-lg"></i>
                   </button>
                 </div>
               </li>

@@ -140,10 +140,12 @@ header h3 {
 }
 .action_btns{
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   flex:1;
   justify-content: center;
 }
+
 .album_meta{
   padding-left: 15px;
 }
@@ -152,7 +154,11 @@ header h3 {
 }
 .playlist {
   background: #e3e3e3;
+  flex: 1;
+  flex-grow: 1;
+  flex-shrink: 1;
   display: flex;
+  flex-direction: column;
  padding: 0.2rem;
 }
 
@@ -190,7 +196,7 @@ header h3 {
   flex-direction: column;
   flex: 1 1;
   padding: 0;
-  width: 70vw;
+  width: 100vw;
 }
 
 .loi li {
@@ -204,6 +210,7 @@ header h3 {
   border-radius: 4px;
   padding: 0.2rem;
   width: 80vw;
+  justify-content: space-between;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .loi li:hover{
@@ -225,6 +232,17 @@ header h3 {
   position: absolute;
   width: 80%;
   border: 1px solid black;
+  z-index: 0;
+}
+.tmbn_song > i{
+  z-index: 1;
+  color: white;
+}
+.tmbn_song:hover > i{
+  color: plum;
+}
+.tmbn_song:active > i{
+  color: crimson;
 }
 .songlist {
   overflow-y: auto;
@@ -392,4 +410,37 @@ display: flex;
 .currentT, .totalT {
   width: 35px;
   margin: 0 10px;
+}
+@media only screen and (max-width: 768px) {
+  h1{
+    font-size: 1rem;
+    word-wrap: break-word;
+  }
+  .action_btns{
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .songname{
+    font-size: 0.8rem;
+  }
+  .songmeta_playlist{
+    display: flex;
+    flex-direction: column;
+  }
+  .playlist_btns_group{
+    height: 80%;
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .playlist_btns_group>button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+ 
 }
